@@ -6,7 +6,7 @@ JS was used for 1-item slider and burger-menu.
 Animate.css was used in slider and burger-menu.
 Slick was uesd for multiple slider.
 
-[Demo](https://milla-romankova.github.io/benefit)
+[Demo](https://milla-romankova.github.io/benefit/index.html)
 
 [Figma](https://www.figma.com/file/D41LmLdI2jZ24xb7UOfJ9XZ7/test_task?node-id=0%3A1)
 
