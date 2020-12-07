@@ -28,8 +28,8 @@ slideRight.addEventListener('click', function() {
   for (let i = 0; i < slider.length; i++) {
     if (slider[i].classList.contains('slider__item--block')
       && (i < slider.length - 1)) {
-      slider[i + 1].classList.add('slider__item--block', 'animate__slideInRight');
       slider[i].classList.remove('slider__item--block', 'animate__slideInRight');
+      slider[i + 1].classList.add('slider__item--block', 'animate__slideInRight');
       points[i + 1].classList.add('slider__point--block');
       points[i].classList.remove('slider__point--block');
       break;
@@ -37,10 +37,11 @@ slideRight.addEventListener('click', function() {
 
     if (slider[i].classList.contains('slider__item--block')
     && (i === slider.length - 1)) {
-      slider[0].classList.add('slider__item--block', 'animate__slideInRight');
       slider[i].classList.remove('slider__item--block', 'animate__slideInRight');
+      slider[0].classList.add('slider__item--block', 'animate__slideInRight');
       points[0].classList.add('slider__point--block');
       points[i].classList.remove('slider__point--block');
+      break;
     }
   }
 });
@@ -49,8 +50,9 @@ slideleft.addEventListener('click', function() {
   for (let i = 0; i < slider.length; i++) {
     if (slider[i].classList.contains('slider__item--block')
       && (i > 0)) {
-      slider[i - 1].classList.add('slider__item--block', 'animate__slideInLeft');
       slider[i].classList.remove('slider__item--block', 'animate__slideInLeft');
+      slider[i - 1].classList.remove('animate__slideInRight');
+      slider[i - 1].classList.add('slider__item--block', 'animate__slideInLeft');
       points[i - 1].classList.add('slider__point--block');
       points[i].classList.remove('slider__point--block');
       break;
@@ -58,8 +60,9 @@ slideleft.addEventListener('click', function() {
 
     if (slider[i].classList.contains('slider__item--block')
     && (i === 0)) {
-      slider[slider.length - 1].classList.add('slider__item--block', 'animate__slideInLeft');
       slider[i].classList.remove('slider__item--block', 'animate__slideInLeft');
+      slider[slider.length - 1].classList.remove('animate__slideInRight');
+      slider[slider.length - 1].classList.add('slider__item--block', 'animate__slideInLeft');
       points[slider.length - 1].classList.add('slider__point--block');
       points[i].classList.remove('slider__point--block');
       break;
