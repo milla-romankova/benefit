@@ -58,15 +58,20 @@
       background-color: $c-white;
       transition: transform 0.3s;
 
+      &:hover {
+        transform: scale(1.2);
+        background-color: $c-white;
+      }
+
       @media(max-width: 750px) {
         background-color: transparent;
         width: 22px;
         height: 22px;
-      }
 
-      &:hover {
-        transform: scale(1.2);
-        background-color: transparent;
+        &:hover {
+          transform: scale(1.2);
+          background-color: transparent;
+        }
       }
     }
   }
