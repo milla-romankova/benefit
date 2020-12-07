@@ -1,0 +1,20 @@
+.logo {
+  display: block;
+  width: $logo-width;
+  height: $logo-height;
+
+  @media(max-width: 1050px) {
+    width: $logo-middle-width;
+    height: $logo-middle-height;
+  }
+
+  @media(max-width: 750px) {
+    width: $logo-small-width;
+    height: $logo-small-height;
+  }
+
+  &--middle {
+    width: $logo-middle-width;
+    height: $logo-middle-height;
+  }
+}

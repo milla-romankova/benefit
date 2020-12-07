@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    >
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    >
+    <link rel="stylesheet" href="./styles/main.scss">
+  </head>
+  <body class="page">
+    <header class="header" id="home">
+      <div class="header__top-wrapper">
+        <div class="header__top">
+          <label for="city">
+            Ваш регион:
+            <select
+              class="header__select"
+              id="city"
+              name="city"
+            >
+              <option selected="true">Днепр</option>
+              <option value="Киев">Киев</option>
+              <option value="Львов">Львов</option>
+            </select>
+          </label>
+          <div class="header__links">
+            <a class="header__link" href="#popular">Шоурум</a>
+            <a class="header__link" href="#contacts">Контакты</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="header__info">
+          <div>
+            <a class="header__tel" href="tel:+0-800-56-87-96">0-800-56-87-96</a>
+            <p class="header__timetable">
+              (пн-пт - 10:00-19:00
+            </p>
+            <p class="header__timetable">
+              сб-вс - 11:00 - 17:00)
+            </p>
+          </div>
+          <a class="header__order" href="#">Заказать звонок</a>
+        </div>
+        <img
+          class="header__logo logo"
+          src="images/logo.png"
+          alt="benefit cosmetics logo"
+        >
+        <div class="header__helpers helpers">
+          <a class="helpers__item" href="#">
+            <div class="helpers__img helpers__img--white">
+              <img
+                src="images/search-icon.svg"
+                alt="basket icon"
+                class="helpers__icon"
+              >
+            </div>
+            <h3 class="helpers__title">Поиск</h3>
+          </a>
+          <a class="helpers__item" href="#">
+            <div class="helpers__img">
+              <img
+                src="images/libra_icon.svg"
+                alt="basket icon"
+                class="helpers__icon"
+              >
+            </div>
+            <h3 class="helpers__title">Сравнение</h3>
+          </a>
+          <a class="helpers__item" href="#">
+            <div class="helpers__img">
+              <img
+                src="images/basket_icon10.svg"
+                alt="basket icon"
+                class="helpers__icon helpers__icon--basket"
+              >
+            </div>
+            <h3 class="helpers__title">Корзина</h3>
+          </a>
+        </div>
+      </div>
+      <nav class="header__nav nav">
+        <div class="nav__burgers">
+          <img
+            class="nav__burger"
+            src="images/burger.svg"
+            alt="berger icon"
+          >
+          <img
+            class="nav__burger nav__burger--toggle"
+            src="images/icon-x.svg"
+            alt="berger icon"
+          >
+        </div>
+        <ul class="nav__list animate__animated animate__fast">
+          <li class="nav__item">
+            <a class="nav__link" href="#">макияж</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">ногти</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">волосы</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">парфюмерия</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">лицо</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">тело и ванна</a>
+          </li>
+          <li >
+            <a class="nav__link" href="#">мужчинам</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">аксессуары</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">health and care</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">подарки</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">бренды</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page__main">
+      <section class="page__section page__section--slider">
+        <div class="slider">
+          <img
+            class="slider__arrow slider__arrow--right"
+            src="images/arrow-right.svg"
+            alt="arrow icon"
+          >
+          <img
+            class="slider__arrow slider__arrow--left"
+            src="images/arrow-right.svg"
+            alt="arrow icon"
+          >
+          <div class="slider__item slider__item--rose animate__animated">
+            <img
+              class="slider__img"
+              src="images/cosmetics.png"
+              alt="a row of cosmetic for lashes"
+            >
+            <img
+              class="slider__img"
+              src="images/cosmetics-green.png"
+              alt="a row of lipsticks and nail gels"
+            >
+            <img
+              class="slider__img"
+              src="images/girl.png"
+              alt="a pretty girl with log hair"
+            >
+            <h2 class="slider__title">
+              Позволь нам освежить и раскрасить твой образ!
+            </h2>
+          </div>
+          <div class="slider__item animate__animated slider__item--block ">
+            <img
+              class="slider__img"
+              src="images/cosmetics.png"
+              alt="a row of cosmetic for lashes"
+            >
+            <img
+              class="slider__img"
+              src="images/cosmetics-green.png"
+              alt="a row of lipsticks and nail gels"
+            >
+            <img
+              class="slider__img"
+              src="images/girl.png"
+              alt="a pretty girl with log hair"
+            >
+            <h2 class="slider__title">
+              Позволь нам освежить и раскрасить твой образ!
+            </h2>
+          </div>
+          <div class="slider__item slider__item--blue animate__animated">
+            <img
+              class="slider__img"
+              src="images/cosmetics.png"
+              alt="a row of cosmetic for lashes"
+            >
+            <img
+              class="slider__img"
+              src="images/cosmetics-green.png"
+              alt="a row of lipsticks and nail gels"
+            >
+            <img
+              class="slider__img"
+              src="images/girl.png"
+              alt="a pretty girl with log hair"
+            >
+            <h2 class="slider__title">
+              Позволь нам освежить и раскрасить твой образ!
+            </h2>
+          </div>
+          <div class="slider__points">
+            <span class="slider__point"></span>
+            <span class="slider__point slider__point--block"></span>
+            <span class="slider__point"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section popular" id="popular">
+        <h2 class="popular__title">Cамое популярное</h2>
+
+        <div class="popular__cards">
+          <div class="slick-slide">
+            <div class="card">
+              <h3 class="card__type-title">Макияж</h3>
+              <div class="card__top">
+                <img
+                  class="card__img"
+                  src="images/lipsticks.png"
+                  alt="four partly transparent rose lipstics"
+                >
+                <h4 class="card__title">
+                  Givenchy Le Rouge* Помада для губ
+                </h4>
+              </div>
+              <div class="card__body">
+                <p class="card__price card__price--sale">
+                  <span class="card__price--previous">1100грн</span>
+                  <br>
+                  900грн
+                </p>
+                <button class="card__button button">
+                  <img
+                    class="button__img"
+                    src="images/basket_icon10.svg"
+                    alt="basket icon"
+                  >
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="slick-slide">
+            <div class="card">
+              <h3 class="card__type-title">Тело и ванна</h3>
+              <div>
+                <img
+                  class="card__img"
+                  src="images/body-oil.png"
+                  alt="a cream can"
+                >
+                <h4 class="card__title">
+                  Натуральное масло "Манго"
+                </h4>
+              </div>
+              <div class="card__body">
+                <p class="card__price">97грн</p>
+                <button class="card__button button">
+                  <img
+                    class="button__img"
+                    src="images/basket_icon10.svg"
+                    alt="basket icon"
+                  >
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="slick-slide">
+            <div class="card">
+              <h3 class="card__type-title">Волосы</h3>
+              <div>
+                <img
+                  class="card__img"
+                  src="images/shampoo.png"
+                  alt="a shampoo in a bottle and a shampoo box"
+                >
+                <h4 class="card__title">
+                  Аюрведический шампунь из индийских трав «Comex»
+                </h4>
+              </div>
+              <div class="card__body">
+                <p class="card__price">62грн</p>
+                <button class="card__button button">
+                  <img
+                    class="button__img"
+                    src="images/basket_icon10.svg"
+                    alt="basket icon"
+                  >
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="slick-slide">
+            <div class="card">
+              <h3 class="card__type-title">Ногти</h3>
+              <div>
+                <img
+                  class="card__img"
+                  src="images/nail-gel.png"
+                  alt="a purple nail gel"
+                >
+                <h4 class="card__title">
+                  Лак для ногтей
+                </h4>
+              </div>
+              <div class="card__body">
+                <p class="card__price">132грн</p>
+                <button class="card__button button">
+                  <img
+                    class="button__img"
+                    src="images/basket_icon10.svg"
+                    alt="basket icon"
+                  >
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="slick-slide">
+            <div class="card">
+              <h3 class="card__type-title">Лицо</h3>
+              <div>
+                <img
+                  class="card__img"
+                  src="images/cream.png"
+                  alt="a can of face mask"
+                >
+                <h4 class="card__title">
+                  Маска для лица "3 глины и морские водоросли"
+                </h4>
+              </div>
+
+              <div class="card__body">
+                <p class="card__price">150грн</p>
+                <button class="card__button button">
+                  <img
+                    class="button__img"
+                    src="images/basket_icon10.svg"
+                    alt="basket icon"
+                  >
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="slick-slide">
+            <div class="card">
+              <h3 class="card__type-title">Мужчинам</h3>
+              <div>
+                <img
+                  class="card__img"
+                  src="images/parfum.png"
+                  alt="a black bottle parfum for men"
+                >
+                <h4 class="card__title">
+                  Geparlys Karen Low Pure Vibe
+                </h4>
+              </div>
+              <div class="card__body">
+                <p class="card__price">266грн</p>
+                <button class="card__button button">
+                  <img
+                    class="button__img"
+                    src="images/basket_icon10.svg"
+                    alt="basket icon"
+                  >
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="card">
+              <h3 class="card__type-title">Лицо</h3>
+              <div>
+                <img
+                  class="card__img"
+                  src="images/cream.png"
+                  alt="a can of face mask"
+                >
+                <h4 class="card__title">
+                  Маска для лица "3 глины и морские водоросли"
+                </h4>
+              </div>
+
+              <div class="card__body">
+                <p class="card__price">150грн</p>
+                <button class="card__button button">
+                  <img
+                    class="button__img"
+                    src="images/basket_icon10.svg"
+                    alt="basket icon"
+                  >
+                  В корзину
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="page__section brands" id="brands">
+        <h2 class="brands__title">Бренды нашего магазина</h2>
+        <div class="brands__icons">
+          <img
+            class="brands__icon"
+            src="images/NYX_logo.png"
+            alt="NYX logo"
+          >
+          <img
+            class="brands__icon"
+            src="images/Sephora-logo.png"
+            alt="NYX logo"
+          >
+          <img
+            class="brands__icon"
+            src="images/smashbox-logo.png"
+            alt="NYX logo"
+          >
+          <img
+            class="brands__icon"
+            src="images/chanel-logo.png"
+            alt="NYX logo"
+          >
+          <img
+            class="brands__icon"
+            src="images/rimmel.png"
+            alt="NYX logo"
+          >
+          <img
+            class="brands__icon"
+            src="images/simple-logo.png"
+            alt="NYX logo"
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer footer">
+      <a class="footer__up" href="#home">
+        <img
+          src="images/up.svg"
+          alt="up arrow icon"
+        >
+      </a>
+      <div class="footer__wrapper">
+        <div class="footer__main">
+          <nav class="footer__nav nav">
+            <ul class="nav__list nav__list--column">
+              <li class="nav__item">
+                <a class="nav__link" href="#">макияж</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">ногти</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">волосы</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">парфюмерия</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">лицо</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">тело и ванна</a>
+              </li>
+              <li >
+                <a class="nav__link" href="#">мужчинам</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">аксессуары</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">health and care</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">подарки</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">бренды</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <h2 class="footer__title">
+              Разделы сайта
+              <img
+                src="images/arrow-pink.svg"
+                alt="pink arrow icon"
+              >
+            </h2>
+
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  О компании
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#brands">
+                  Бренды
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  Оплата и доставка
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  Возврат и обмен
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#popular">
+                  Шоурум
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="footer__info" id="contacts">
+            <a
+              class="footer__tel"
+              href="tel:+3-095-721-64-63 "
+            >
+              +3 (095) 721-64-63
+            </a>
+            <p class="footer__timetable">
+              (пн-пт - 10:00-19:00
+            </p>
+            <p class="footer__timetable">
+              сб-вс - 11:00 - 17:00)
+            </p>
+            <a class="footer__button">Заказать звонок</a>
+          </div>
+
+          <div class="footer__payments">
+            <h3 class="footer__subtitle">
+              Мы принимаем
+              <span class="footer__subtitle--invisible">любой способ оплаты</span>
+            </h3>
+            <div class="footer__pay-cards">
+              <img
+                class="footer__pay-card"
+                src="images/visa.png"
+                alt="visa icon"
+              >
+              <img
+                src="images/mastercard.png"
+                alt="mastercard icon"
+              >
+            </div>
+          </div>
+        </div>
+        <img
+          class="footer__logo logo logo--middle"
+          src="images/logo.png"
+          alt="benefit cosmetics logo"
+        >
+        <p class="footer__text">
+          © 2013-2017 «Benefit» — интернет-магазин косметики email:
+          <a class="footer__mail" href="mailto:zakaz@benefit.ru">zakaz@benefit.ru</a>
+        </p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
+</html>

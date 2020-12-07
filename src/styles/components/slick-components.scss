@@ -1,0 +1,41 @@
+
+.slick-next {
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 20px);
+  z-index: 2;
+  background: url("../images/arrow-right.svg") no-repeat center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: border 0.3s;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $c-grey-line;
+  }
+}
+
+.slick-prev {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 20px);
+  z-index: 2;
+  font-size: 0;
+  background: url("../images/arrow-right.svg") no-repeat center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: border 0.3s;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $c-grey-line;
+  }
+}

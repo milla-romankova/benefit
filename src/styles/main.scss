@@ -1,0 +1,19 @@
+@import "base/reset";
+@import "base/general";
+@import "base/fonts";
+
+@import "abstracts/vars";
+
+@import "layout/page";
+@import "layout/header";
+@import "layout/popular";
+@import "layout/brands";
+@import "layout/footer";
+
+@import "components/helpers";
+@import "components/nav";
+@import "components/logo";
+@import "components/slider";
+@import "components/card";
+@import "components/button.scss";
+@import "components/slick-components";
