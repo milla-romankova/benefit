@@ -6,6 +6,8 @@ const list = document.querySelector('.slider__points');
 const slideRight = document.querySelector('.slider__arrow--right');
 const slideleft = document.querySelector('.slider__arrow--left');
 
+/* eslint-disable */
+
 list.addEventListener('click', event => {
   if (event.target.tagName !== 'SPAN') {
     return;
@@ -26,12 +28,8 @@ slideRight.addEventListener('click', function() {
   for (let i = 0; i < slider.length; i++) {
     if (slider[i].classList.contains('slider__item--block')
       && (i < slider.length - 1)) {
-      slider[i + 1].classList
-        .add('slider__item--block', 'animate__slideInRight');
-
-      slider[i].classList
-        .remove('slider__item--block', 'animate__slideInRight');
-
+      slider[i + 1].classList.add('slider__item--block', 'animate__slideInRight');
+      slider[i].classList.remove('slider__item--block', 'animate__slideInRight');
       points[i + 1].classList.add('slider__point--block');
       points[i].classList.remove('slider__point--block');
       break;
@@ -39,11 +37,8 @@ slideRight.addEventListener('click', function() {
 
     if (slider[i].classList.contains('slider__item--block')
     && (i === slider.length - 1)) {
-      slider[0]
-        .add('slider__item--block', 'animate__slideInRight');
-
-      slider[i]
-        .classList.remove('slider__item--block', 'animate__slideInRight');
+      slider[0].classList.add('slider__item--block', 'animate__slideInRight');
+      slider[i].classList.remove('slider__item--block', 'animate__slideInRight');
       points[0].classList.add('slider__point--block');
       points[i].classList.remove('slider__point--block');
     }
@@ -54,11 +49,8 @@ slideleft.addEventListener('click', function() {
   for (let i = 0; i < slider.length; i++) {
     if (slider[i].classList.contains('slider__item--block')
       && (i > 0)) {
-      slider[i - 1].classList
-        .add('slider__item--block', 'animate__slideInLeft');
-
-      slider[i].classList
-        .remove('slider__item--block', 'animate__slideInLeft');
+      slider[i - 1].classList.add('slider__item--block', 'animate__slideInLeft');
+      slider[i].classList.remove('slider__item--block', 'animate__slideInLeft');
       points[i - 1].classList.add('slider__point--block');
       points[i].classList.remove('slider__point--block');
       break;
@@ -66,9 +58,7 @@ slideleft.addEventListener('click', function() {
 
     if (slider[i].classList.contains('slider__item--block')
     && (i === 0)) {
-      slider[slider.length - 1].classList
-        .add('slider__item--block', 'animate__slideInLeft');
-
+      slider[slider.length - 1].classList.add('slider__item--block', 'animate__slideInLeft');
       slider[i].classList.remove('slider__item--block', 'animate__slideInLeft');
       points[slider.length - 1].classList.add('slider__point--block');
       points[i].classList.remove('slider__point--block');
@@ -86,16 +76,13 @@ burger.addEventListener('click', event => {
 
   if (event.target === burger.children[0]) {
     nav.classList.remove('animate__slideOutLeft');
-
-    nav.classList
-      .add('nav__list--toggle', 'animate__slideInLeft');
+    nav.classList.add('nav__list--toggle', 'animate__slideInLeft');
   } else {
     nav.classList.remove('animate__slideInLeft');
     nav.classList.add('animate__slideOutLeft');
   }
 });
 
-/* eslint-disable */
 $(document).ready(function() {
   $('.popular__cards').slick({
     arrows: true,
