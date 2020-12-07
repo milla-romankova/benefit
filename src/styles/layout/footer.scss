@@ -47,7 +47,6 @@
 
     @media(max-width: 1050px) {
       order: 1;
-      margin-right: 4%;
     }
 
     @media(max-width: 750px) {
@@ -73,6 +72,19 @@
     }
   }
 
+  &__center {
+    @media(max-width: 1050px) {
+      order: 2;
+      margin-left: 4%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media(max-width: 750px) {
+      display: block;
+    }
+  }
+
   &__list {
     margin-right: 14vw;
     list-style: none;
@@ -85,7 +97,7 @@
 
     @media(max-width: 1050px) {
       order: 2;
-      margin-right: 15%;
+      margin-right: 15vw;
     }
 
     @media(max-width: 750px) {
