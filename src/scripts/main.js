@@ -7,7 +7,6 @@ const slideRight = document.querySelector('.slider__arrow--right');
 const slideleft = document.querySelector('.slider__arrow--left');
 
 /* eslint-disable */
-
 list.addEventListener('click', event => {
   if (event.target.tagName !== 'SPAN') {
     return;
@@ -83,6 +82,28 @@ burger.addEventListener('click', event => {
   } else {
     nav.classList.remove('animate__slideInLeft');
     nav.classList.add('animate__slideOutLeft');
+  }
+});
+
+const footerToggle = document.querySelector('.footer__center');
+const footerList = document.querySelector('.footer__list');
+
+footerToggle.addEventListener('click', event => {
+  footerToggle.children[0].classList.toggle('footer__title--toggle');
+  footerToggle.children[1].classList.toggle('footer__burger--toggle');
+
+  if (event.target === footerToggle.children[0]) {
+    footerList.classList.remove('animate__slideOutLeft');
+    footerList.classList.add('footer__list--toggle', 'animate__slideInLeft');
+  }
+
+  if(event.target === footerToggle.children[1]){
+    footerList.classList.remove('animate__slideInLeft');
+    footerList.classList.add('animate__slideOutLeft');
+  }
+
+  else {
+    return;
   }
 });
 

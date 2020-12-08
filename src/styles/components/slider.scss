@@ -2,6 +2,7 @@
   position: relative;
   z-index: 1;
   background-color: #e5e5e5;
+  overflow: hidden;
 
   &__arrow {
     position: absolute;
@@ -43,6 +44,7 @@
 
   &__item {
     display: none;
+    max-width: 1680px;
     justify-content: space-between;
     align-items: center;
     background-color: #bcbc40;
